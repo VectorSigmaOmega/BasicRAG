@@ -1,5 +1,8 @@
 # Knowledge-base Search Engine (RAG)
 
+<img width="1230" height="624" alt="Screenshot 2026-04-03 122014" src="https://github.com/user-attachments/assets/1b2c9347-6cb3-4381-aaf0-71817552c137" />
+
+
 A Retrieval-Augmented Generation (RAG) system to search across multiple text/PDF documents and synthesize answers to user queries using the Google Gemini API.
 
 ## Architecture
