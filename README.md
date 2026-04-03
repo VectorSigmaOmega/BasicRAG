@@ -9,7 +9,7 @@ A Retrieval-Augmented Generation (RAG) system to search across multiple text/PDF
 
 *   **Backend:** Python + FastAPI
 *   **Vector Database:** FAISS (In-memory, ephemeral)
-*   **Embeddings & LLM:** Google Gemini (`gemini-3-flash-preview` and `gemini-embedding-2-preview` with automatic fallback).
+*   **Embeddings & LLM:** Google Gemini (`gemini-3-flash-preview` and `gemini-embedding-2-preview` with automatic fallback to `gemini-embedding-001`).
 *   **Frontend:** React (Vite) + Vanilla CSS
 
 This system is designed to have **minimal local dependencies**. FAISS runs entirely in-memory, and all heavy ML computation (embeddings and synthesis) is offloaded to the Google Gemini API. No local Docker containers or PostgreSQL installations are required.
