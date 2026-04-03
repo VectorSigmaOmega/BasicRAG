@@ -44,7 +44,7 @@ class DocumentProcessor:
         client = genai.Client(api_key=api_key)
         
         # Fallback list of models, starting with the preview model the user suggested
-        models_to_try = ['gemini-embedding-2-preview', 'text-embedding-004', 'embedding-001', 'gemini-embedding-001']
+        models_to_try = ['gemini-embedding-2-preview', 'gemini-embedding-001']
         
         embeddings = []
         batch_size = 20 # Limit batch size to avoid payload size/rate limit errors
@@ -129,7 +129,7 @@ Context:
 User Question: {query}
 """
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3-flash-preview',
             contents=prompt
         )
         return response.text
